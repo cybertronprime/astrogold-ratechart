@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astrogold Service Station Complete Product List</title>
+    <title>Astrogold Service Station Product Sales List</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -37,7 +37,10 @@
         th, td {
             text-align: left;
             padding: 8px;
-            border-bottom: 1px solid #ddd;
+            border: 1px solid #ddd;
+        }
+        td:nth-child(5), td:nth-child(6) {
+            text-align: right;
         }
         th {
             background-color: #f2f2f2;
@@ -49,11 +52,16 @@
         tr:hover {
             background-color: #e6e6e6;
         }
+        .price-input {
+            width: 100px;
+            padding: 4px;
+            text-align: right;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>ASTROGOLD SERVICE STATION</h1>
+        <h1>ASTROGOLD SERVICE STATION - PRODUCT SALES LIST</h1>
         <div class="info">
             <p><strong>Dealer:</strong> Hindustan Petroleum Corporation Ltd</p>
             <p><strong>Address:</strong> HP Petrol Pump, Sector - 8/A, Bokaro Steel City, Dist - Bokaro, Jharkhand - 827009</p>
@@ -64,425 +72,365 @@
             <thead>
                 <tr>
                     <th>Sl.</th>
-                    <th>Date of Purchase</th>
                     <th>Name of Product</th>
                     <th>Packing Size</th>
+                    <th>Year</th>
                     <th>Quantity</th>
-                    <th>Purchase Price</th>
-                    <th>MRP</th>
-                    <th>Difference / Remarks</th>
+                    <th>MRP (₹)</th>
+                    <th>Your Price</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>01.</td>
-                    <td>24.03.2017</td>
-                    <td>HP Gear Drive EP 90</td>
-                    <td>05 Liter</td>
-                    <td>60</td>
-                    <td>1055.00</td>
-                    <td>1189.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>02.</td>
-                    <td>-do-</td>
-                    <td>HP Milcy Turbo 15 W 40</td>
-                    <td>15 Liter</td>
-                    <td>34</td>
-                    <td>3518.00</td>
-                    <td>4048.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>03.</td>
-                    <td>-do-</td>
-                    <td>HP Gear Drive EP 90</td>
-                    <td>20 Liter</td>
-                    <td>10</td>
-                    <td>4146.00</td>
-                    <td>4644.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>04.</td>
-                    <td>27.12.2016</td>
-                    <td>HP Race 4 20W 40</td>
-                    <td>1 Liter</td>
-                    <td>240</td>
-                    <td>240.00</td>
-                    <td>296.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>05.</td>
-                    <td>-do-</td>
-                    <td>HP Race 4 20W 40</td>
-                    <td>900 ML</td>
-                    <td>300</td>
-                    <td>244.00</td>
-                    <td>270.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>06.</td>
-                    <td>25.06.2016</td>
-                    <td>HP Milcy Turbo 15 W 40</td>
-                    <td>1 Liter</td>
-                    <td>240</td>
-                    <td>239.00</td>
-                    <td>276.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>07.</td>
-                    <td>-do-</td>
-                    <td>HP Milcy Turbo 15 W 40</td>
-                    <td>10 Liter</td>
-                    <td>02</td>
-                    <td>2350.00</td>
-                    <td>2702.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>08.</td>
-                    <td>-do-</td>
-                    <td>HP Laal Ghoda 20 W 40</td>
-                    <td>500 ML</td>
-                    <td>720</td>
-                    <td>89.00</td>
-                    <td>99.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>09.</td>
-                    <td>23.09.2016</td>
-                    <td>HP Enklo 46</td>
-                    <td>210 Liter</td>
-                    <td>05</td>
-                    <td>37590.00</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>10.</td>
-                    <td>-do-</td>
-                    <td>HP Milcy Super 20 W 40</td>
-                    <td>210 Liter</td>
                     <td>01</td>
-                    <td>40530.00</td>
-                    <td></td>
-                    <td></td>
+                    <td>AP3 Grease</td>
+                    <td>1 KG</td>
+                    <td>2017</td>
+                    <td>113</td>
+                    <td>321.00</td>
+                    <td><input type="number" class="price-input"></td>
                 </tr>
                 <tr>
-                    <td>11.</td>
-                    <td>27.03.2015</td>
-                    <td>HP Enklo 32</td>
-                    <td>210 Liter</td>
-                    <td>03</td>
-                    <td>37590.00</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>12.</td>
-                    <td>-do-</td>
-                    <td>HP Milcy Turbo 15 W 40</td>
-                    <td>210 Liter</td>
                     <td>02</td>
-                    <td>45990.00</td>
-                    <td></td>
-                    <td></td>
+                    <td>AP3 Grease</td>
+                    <td>500 Gram</td>
+                    <td>2017</td>
+                    <td>168</td>
+                    <td>163.00</td>
+                    <td><input type="number" class="price-input"></td>
                 </tr>
                 <tr>
-                    <td>13.</td>
-                    <td>27.03.2015</td>
-                    <td>HP Gear Drive EP 90</td>
-                    <td>½ Liter</td>
-                    <td>800</td>
-                    <td>110.00</td>
+                    <td>03</td>
+                    <td>ATQ</td>
+                    <td>1 Liter</td>
+                    <td>2017</td>
+                    <td>140</td>
+                    <td>236.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>ATQ</td>
+                    <td>0.5 Liter</td>
+                    <td>2017</td>
+                    <td>162</td>
+                    <td>130.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>HP Brake Fluid</td>
+                    <td>250 ML</td>
+                    <td>2017</td>
+                    <td>59</td>
+                    <td>78.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td>HP Brake Fluid</td>
+                    <td>0.5 Liter</td>
+                    <td>-</td>
+                    <td>12</td>
+                    <td>138.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>07</td>
+                    <td>HP Cruise</td>
+                    <td>4 Liter</td>
+                    <td>-</td>
+                    <td>16</td>
+                    <td>770.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>08</td>
+                    <td>HP Gear Drive</td>
+                    <td>0.5 Liter</td>
+                    <td>2014</td>
+                    <td>238</td>
                     <td>125.00</td>
-                    <td></td>
+                    <td><input type="number" class="price-input"></td>
                 </tr>
                 <tr>
-                    <td>14.</td>
-                    <td>-do-</td>
-                    <td>HP Gear Drive BP 90</td>
+                    <td>09</td>
+                    <td>HP Gear Drive</td>
+                    <td>0.5 Liter</td>
+                    <td>-</td>
+                    <td>214</td>
+                    <td>125.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>HP Gear Drive</td>
                     <td>1 Liter</td>
-                    <td>750</td>
-                    <td>214.00</td>
+                    <td>2015</td>
+                    <td>194</td>
                     <td>242.00</td>
-                    <td></td>
+                    <td><input type="number" class="price-input"></td>
                 </tr>
                 <tr>
-                    <td>15.</td>
-                    <td>-do-</td>
-                    <td>HP auto Trans Fluid</td>
+                    <td>11</td>
+                    <td>HP Gear Drive</td>
                     <td>1 Liter</td>
-                    <td>20</td>
-                    <td>221.00</td>
-                    <td>255.00</td>
-                    <td></td>
+                    <td>-</td>
+                    <td>231</td>
+                    <td>242.00</td>
+                    <td><input type="number" class="price-input"></td>
                 </tr>
                 <tr>
-                    <td>16.</td>
-                    <td>-do-</td>
+                    <td>12</td>
+                    <td>HP Laal Ghoda</td>
+                    <td>0.5 Liter</td>
+                    <td>-</td>
+                    <td>424</td>
+                    <td>99.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>HP Laal Ghoda</td>
+                    <td>1 Liter</td>
+                    <td>2021</td>
+                    <td>300</td>
+                    <td>257.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>HP Laal Ghoda</td>
+                    <td>10 Liter</td>
+                    <td>2018</td>
+                    <td>8</td>
+                    <td>2,033.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>HP Milcy Turbo 15W40</td>
+                    <td>1 Liter</td>
+                    <td>2016</td>
+                    <td>20</td>
+                    <td>276.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>HP Milcy Turbo 15W40</td>
+                    <td>1 Liter</td>
+                    <td>2019</td>
+                    <td>60</td>
+                    <td>291.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>HP Milcy Turbo 15W40</td>
+                    <td>5 Liter</td>
+                    <td>2013</td>
+                    <td>49</td>
+                    <td>1,268.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>HP Milcy Turbo 15W40</td>
+                    <td>15 Liter</td>
+                    <td>2011</td>
+                    <td>12</td>
+                    <td>3,448.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>HP Milcy Turbo 15W40</td>
+                    <td>15 Liter</td>
+                    <td>2019</td>
+                    <td>32</td>
+                    <td>4,232.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>HP Milcy Turbo 15W40</td>
+                    <td>15 Liter</td>
+                    <td>-</td>
+                    <td>16</td>
+                    <td>3,857.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>HP Milcy Turbo 15W40</td>
+                    <td>20 Liter</td>
+                    <td>2013</td>
+                    <td>9</td>
+                    <td>4,928.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>HP Milcy Turbo 15W40</td>
+                    <td>20 Liter</td>
+                    <td>-</td>
+                    <td>29</td>
+                    <td>5,160.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>23</td>
                     <td>HP Wheel Bearing Grease</td>
                     <td>1 KG</td>
-                    <td>180</td>
-                    <td>215.00</td>
+                    <td>2013</td>
+                    <td>162</td>
                     <td>246.00</td>
-                    <td></td>
+                    <td><input type="number" class="price-input"></td>
                 </tr>
                 <tr>
-                    <td>17.</td>
-                    <td>27.06.2013</td>
-                    <td>HP Cruse 20 W 40</td>
-                    <td>4 Liter</td>
-                    <td>52</td>
-                    <td>670.00</td>
-                    <td>770.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>18.</td>
-                    <td>-do-</td>
-                    <td>HP Milcy Turbo 15 W 40</td>
-                    <td>5 Liter</td>
-                    <td>84</td>
-                    <td>1060.00</td>
-                    <td>1268.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>19.</td>
-                    <td>-do-</td>
-                    <td>HP Curse Classic</td>
-                    <td>½ Liter</td>
-                    <td>80</td>
-                    <td>106.00</td>
-                    <td>126.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>20.</td>
-                    <td>19.09.2013</td>
-                    <td>Race 4</td>
-                    <td>1 Liter</td>
-                    <td>460</td>
-                    <td>220.00</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>21.</td>
-                    <td>-do-</td>
-                    <td>HP Sup. D. Brake Fld.</td>
-                    <td>500 ML</td>
-                    <td>120</td>
-                    <td>121.00</td>
-                    <td>138.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>22.</td>
-                    <td>-do-</td>
-                    <td>HP Thanda Raja</td>
-                    <td>1 Liter</td>
-                    <td>180</td>
-                    <td>131.00</td>
-                    <td>167.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>23.</td>
-                    <td>20.12.2013</td>
-                    <td>HP Milcy Turbo 15 W 40</td>
-                    <td>20 Liter</td>
-                    <td>12</td>
-                    <td>4195.00</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>24.</td>
-                    <td>-do-</td>
-                    <td>HP Milcy Turbo 15 W 40</td>
-                    <td>15 Liter</td>
-                    <td>12</td>
-                    <td>3386.00</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>25.</td>
-                    <td>-do-</td>
-                    <td>HP Milcy Turbo 15 W 40</td>
-                    <td>10 Liter</td>
-                    <td>18</td>
-                    <td>2269.00</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>26.</td>
-                    <td>-do-</td>
-                    <td>Kool Gard</td>
-                    <td>1 Liter</td>
-                    <td>120</td>
-                    <td>212.00</td>
-                    <td>259.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>27.</td>
-                    <td>-do-</td>
-                    <td>HP Laal Ghoda 20 W 40</td>
-                    <td>1 Liter</td>
-                    <td>50</td>
-                    <td>164.00</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>28.</td>
-                    <td>-do-</td>
+                    <td>24</td>
                     <td>HP Wheel Bearing Grease</td>
                     <td>2 KG</td>
-                    <td>30</td>
-                    <td>400.00</td>
+                    <td>2013</td>
+                    <td>13</td>
                     <td>454.00</td>
-                    <td></td>
+                    <td><input type="number" class="price-input"></td>
                 </tr>
                 <tr>
-                    <td>29.</td>
-                    <td>13.03.2014</td>
-                    <td>Racer - 4</td>
-                    <td>1 Liter</td>
-                    <td>230</td>
-                    <td>235.00</td>
-                    <td></td>
-                    <td></td>
+                    <td>25</td>
+                    <td>Kishan Shakti</td>
+                    <td>3.5 Liter</td>
+                    <td>2018</td>
+                    <td>117</td>
+                    <td>683.00</td>
+                    <td><input type="number" class="price-input"></td>
                 </tr>
                 <tr>
-                    <td>30.</td>
-                    <td>-do-</td>
-                    <td>Racer - 2</td>
-                    <td>210 Liter</td>
-                    <td>06</td>
-                    <td>44050.00</td>
-                    <td></td>
-                    <td></td>
+                    <td>26</td>
+                    <td>Kishan Shakti</td>
+                    <td>3.5 Liter</td>
+                    <td>-</td>
+                    <td>10</td>
+                    <td>575.00</td>
+                    <td><input type="number" class="price-input"></td>
                 </tr>
                 <tr>
-                    <td>31.</td>
-                    <td>-do-</td>
-                    <td>HP Cruse Classic</td>
-                    <td>1 Liter</td>
-                    <td>120</td>
-                    <td>209.00</td>
-                    <td>240.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>32.</td>
-                    <td>-do-</td>
-                    <td>HP Sup. D. Brake Fluid</td>
-                    <td>½ Liter</td>
-                    <td></td>
-                    <td>73.00</td>
-                    <td>78.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>33.</td>
-                    <td></td>
-                    <td>HP Milcy Turbo 15 W 40</td>
-                    <td>1 Liter</td>
-                    <td></td>
-                    <td>239.00</td>
-                    <td>276.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>34.</td>
-                    <td></td>
-                    <td>HP Milcy Turbo 15 W 40</td>
-                    <td>5 Liter</td>
-                    <td></td>
-                    <td>1060.00</td>
-                    <td>1268.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>35.</td>
-                    <td></td>
-                    <td>HP Sup. D. Brake Fld.</td>
-                    <td>500 ML</td>
-                    <td></td>
-                    <td>121.00</td>
-                    <td>133.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>36.</td>
-                    <td></td>
-                    <td>HP Thanda Raja</td>
-                    <td>1 Liter</td>
-                    <td></td>
-                    <td>131.00</td>
-                    <td>167.00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>37.</td>
-                    <td></td>
-                    <td>HP Milcy Turbo 15 W 40</td>
-                    <td>20 Liter</td>
-                    <td></td>
-                    <td>4195.00</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>38.</td>
-                    <td></td>
-                    <td>HP Milcy Turbo 15 W 40</td>
-                    <td>15 Liter</td>
-                    <td></td>
-                    <td>3386.00</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>39.</td>
-                    <td></td>
-                    <td>HP Milcy Turbo 15 W 40</td>
-                    <td>10 Liter</td>
-                    <td></td>
-                    <td>2269.00</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>40.</td>
-                    <td></td>
+                    <td>27</td>
                     <td>Kool Gard</td>
                     <td>1 Liter</td>
-                    <td></td>
-                    <td>212.00</td>
+                    <td>-</td>
+                    <td>1</td>
                     <td>259.00</td>
-                    <td></td>
+                    <td><input type="number" class="price-input"></td>
                 </tr>
                 <tr>
-                    <td>41.</td>
-                    <td></td>
-                    <td>HP Sup. D. Brake Fluid</td>
-                    <td>¼ Liter</td>
-                    <td></td>
-                    <td>73.00</td>
-                    <td>78.00</td>
-                    <td></td>
+                    <td>28</td>
+                    <td>Kool Gard</td>
+                    <td>250 ML</td>
+                    <td>-</td>
+                    <td>33</td>
+                    <td>61.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>Racer 4</td>
+                    <td>1 Liter</td>
+                    <td>2011</td>
+                    <td>24</td>
+                    <td>240.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>Racer 4</td>
+                    <td>1 Liter</td>
+                    <td>2012</td>
+                    <td>159</td>
+                    <td>250.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>Racer 4</td>
+                    <td>1 Liter</td>
+                    <td>2013</td>
+                    <td>406</td>
+                    <td>270.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>33</td>
+                    <td>Racer 4</td>
+                    <td>1 Liter</td>
+                    <td>2016</td>
+                    <td>58</td>
+                    <td>296.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>34</td>
+                    <td>Racer 4</td>
+                    <td>1 Liter</td>
+                    <td>2016</td>
+                    <td>6</td>
+                    <td>308.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>Racer 4</td>
+                    <td>1 Liter</td>
+                    <td>2019</td>
+                    <td>70</td>
+                    <td>324.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td>Racer 4</td>
+                    <td>900 ML</td>
+                    <td>2013</td>
+                    <td>124</td>
+                    <td>250.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>37</td>
+                    <td>Racer 4</td>
+                    <td>900 ML</td>
+                    <td>2016</td>
+                    <td>190</td>
+                    <td>270.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>38</td>
+                    <td>Thanda Raja</td>
+                    <td>1 Liter</td>
+                    <td>2012</td>
+                    <td>75</td>
+                    <td>167.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>39</td>
+                    <td>Thanda Raja</td>
+                    <td>1 Liter</td>
+                    <td>-</td>
+                    <td>60</td>
+                    <td>196.00</td>
+                    <td><input type="number" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td>40</td>
+                    <td>Thanda Raja</td>
+                    <td>1 Liter</td>
+                    <td>-</td>
+                    <td>19</td>
+                    <td>19.00</td>
+                    <td><input type="number" class="price-input"></td>
                 </tr>
             </tbody>
         </table>
